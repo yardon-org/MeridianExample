@@ -5,20 +5,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Meridian - Example</title>
+    <link href="bernie.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
+    <div class="centre">
+        <form id="form1" runat="server">
             <div>
-                <asp:DropDownList ID="SiteDropDown" runat="server"></asp:DropDownList>
-                <asp:Button ID="EditSiteButton" runat="server" Text="Edit" />
+                <div class="site">
+                    <asp:Label runat="server">Sites</asp:Label>
+                    <asp:DropDownList ID="SiteDropDown" runat="server"></asp:DropDownList>
+                    <asp:Button ID="EditSiteButton" runat="server" Text="Edit" />
+                </div>
+                <div class="doctype">
+                    <asp:Label runat="server">Document Types</asp:Label>
+                    <asp:DropDownList ID="DocumentTypeDropDown" runat="server"></asp:DropDownList>
+                    <asp:Button ID="EditDocTypeButton" runat="server" Text="Edit" />
+                </div>
             </div>
-            <div>
-                <asp:DropDownList ID="DocumentTypeDropDown" runat="server">
-                </asp:DropDownList>
-                <asp:Button ID="EditDocTypeButton" runat="server" Text="Edit" />
-            </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </body>
 </html>

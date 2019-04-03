@@ -90,6 +90,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\bernie.css" />
     <Content Include="DropsDowns.aspx" />
     <Content Include="EditSite.aspx" />
     <Content Include="EditDocType.aspx" />
